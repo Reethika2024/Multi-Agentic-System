@@ -6,6 +6,11 @@ from langchain_core.messages import HumanMessage
 from langgraph.graph import StateGraph, END
 from langchain_openai import ChatOpenAI
 from langchain_community.tools.tavily_search import TavilySearchResults
+import logging
+logging.basicConfig(level=logging.INFO)
+
+logging.info("Planner Agent started")
+
 
 # =========================
 # Logging Configuration

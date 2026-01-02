@@ -249,6 +249,7 @@ def main():
             st.write(result["final_report"])
             st.write("Agent Execution Order:")
             st.write(agent_execution_log)
+            enable_planner = st.checkbox("Enable Planner Agent", True)
 
 
         except Exception as e:

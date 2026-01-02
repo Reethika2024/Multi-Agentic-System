@@ -220,7 +220,7 @@ def main():
 
     research_topic = st.text_input("Enter a research topic:")
 
-    if st.button("Run Research") and research_topic:
+    if st.button("Run Research") and  research_topic:
         status_placeholder = st.empty()
         progress_bar = st.progress(0)
 
@@ -247,6 +247,9 @@ def main():
 
             st.subheader("📄 Final Report")
             st.write(result["final_report"])
+            st.write("Agent Execution Order:")
+            st.write(agent_execution_log)
+
 
         except Exception as e:
             st.error(f"❌ Error occurred: {e}")
